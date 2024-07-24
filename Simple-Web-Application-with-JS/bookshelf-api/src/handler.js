@@ -76,7 +76,7 @@ const addBooksHandler = (request, h) => {
   return response;
 };
 
-// menampilkan bookshelf
+// menampilkan buku
 const getAllBooksHandler = () => ({
   status: "success",
   data: {
@@ -88,3 +88,5 @@ module.exports = {
   addBooksHandler,
   getAllBooksHandler,
 };
+
+// menampilkan detail buku
