@@ -100,10 +100,16 @@ const getAllBooksHandler = (request, h) => {
     );
   }
 
+  const getAllBooks = filteredBooks.map(book => ({
+    id: book.id,
+    name: book.name,
+    publisher: book.publisher
+  }));
+
   const response = h.response({
     status: "success",
     data: {
-      books: filteredBooks,
+      books: getAllBooks,
     },
   });
   response.code(200);
