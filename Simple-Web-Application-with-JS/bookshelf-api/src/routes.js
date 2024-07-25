@@ -28,7 +28,7 @@ const routes = [
     handler: editBookByIdHandler,
   },
   {
-    method: "DELEYTE",
+    method: "DELETE",
     path: "/books/{bookId}",
     handler: deleteBookByIdHandler,
   },
